@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabor Chileno: recetas tradicionales de Chile.">
+  <title>Sabor Chileno</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Sabor Chileno, inicio">
+      <span>Sabor</span><strong>Chileno</strong>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#recetas">Recetas</a>
+      <a href="#postres">Postres</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <form class="search-form" id="search-form" role="search">
+      <label class="visually-hidden" for="search-input">Buscar receta</label>
+      <input id="search-input" type="search" placeholder="Buscar receta" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main id="inicio">
+    <section class="recipes-section" id="recetas">
+      <h1>Recetas de la semana</h1>
+
+      <div class="content-layout">
+        <div class="recipe-grid">
+          <article class="recipe-card" id="pastel">
+            <img src="img/pastel-de-choclo.png" alt="Fotografía de pastel de choclo">
+            <h2>Pastel de choclo</h2>
+            <p class="rating"><button class="star-button" type="button" aria-label="Votar por Pastel de choclo" data-recipe="pastel">★</button> <span id="score-pastel">24</span></p>
+          </article>
+
+          <article class="recipe-card" id="empanadas">
+            <img src="img/empanadas-de-pino.png" alt="Fotografía de empanadas de pino">
+            <h2>Empanadas de pino</h2>
+            <p class="rating"><button class="star-button" type="button" aria-label="Votar por Empanadas de pino" data-recipe="empanadas">★</button> <span id="score-empanadas">31</span></p>
+          </article>
+
+          <article class="recipe-card" id="sopaipillas">
+            <img src="img/sopaipillas.png" alt="Fotografía de sopaipillas">
+            <h2>Sopaipillas</h2>
+            <p class="rating"><button class="star-button" type="button" aria-label="Votar por Sopaipillas" data-recipe="sopaipillas">★</button> <span id="score-sopaipillas">18</span></p>
+          </article>
+        </div>
+
+        <aside class="advertisement" id="advertisement" aria-label="Publicidad">
+          <h2>Publicidad</h2>
+          <img src="img/publicidad.png" alt="Imagen de publicidad">
+          <p>¡Prueba nuestro merkén artesanal!</p>
+          <button type="button" id="close-ad">Cerrar anuncio</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="extra-section" id="postres">
+      <h2>Postres</h2>
+      <p>Descubre sabores dulces de la cocina chilena.</p>
+    </section>
+    <section class="extra-section" id="bebidas">
+      <h2>Bebidas</h2>
+      <p>Ideas para acompañar tus recetas favoritas.</p>
+    </section>
+    <section class="extra-section" id="contacto">
+      <h2>Contacto</h2>
+      <p>¡Gracias por visitar Sabor Chileno!</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Sabor Chileno</p>
+  </footer>
+</body>
+</html>
